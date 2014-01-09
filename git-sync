@@ -270,7 +270,7 @@ if [ ! -z "$(local_changes)" ]; then
     # after autocommit, we should be clean
     rstate="$(git_repo_state)"
     if [[ ! -z "$rstate" ]]; then
-	echo "git-sync: Auto-commit left uncommited changes. Please add or remove them as desired and retry."
+	echo "git-sync: Auto-commit left uncommitted changes. Please add or remove them as desired and retry."
 	exit 1
     fi
 fi
